@@ -1,14 +1,11 @@
 import { createStore } from 'vuex';
+import todoList from './todoList';
+import status from './status';
 
-export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+const store = createStore({
   modules: {
+    todoList,
+    status,
   },
 });
+export default store;
